@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d12">
+  <title>WINR — Your AI Teacher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="logo">W</div>
+        <div>
+          <strong>WINR</strong>
+          <span>Your AI Teacher</span>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChat">＋ New chat</button>
+
+      <div class="side-section">
+        <span>Recent</span>
+        <div id="recentChats"></div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="status-dot"></div>
+        <span>AI online</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu" id="menuBtn">☰</button>
+        <div class="mobile-title">WINR</div>
+        <button class="icon-btn" id="clearBtn" title="Clear chat">⌫</button>
+      </header>
+
+      <section class="chat" id="chat">
+        <div class="welcome" id="welcome">
+          <div class="welcome-logo">✦</div>
+          <h1>What do you want to learn?</h1>
+          <p>I'm WINR — your friendly AI teacher. Ask me anything. I'll explain it clearly, step by step, whenever you need more detail.</p>
+
+          <div class="suggestions">
+            <button data-prompt="Explain photosynthesis in simple words">Explain a topic</button>
+            <button data-prompt="Give me 5 creative website ideas">Brainstorm ideas</button>
+            <button data-prompt="Help me write a professional email">Write something</button>
+            <button data-prompt="Teach me something interesting">Teach me</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="composer-wrap">
+        <form class="composer" id="composer">
+          <textarea id="input" rows="1" placeholder="Ask WINR anything..." autocomplete="off"></textarea>
+          <button class="send" id="send" type="submit" aria-label="Send">➤</button>
+        </form>
+        <div class="disclaimer">WINR can make mistakes. Check important information when it matters.</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
