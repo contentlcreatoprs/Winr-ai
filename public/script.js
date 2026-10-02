@@ -95,7 +95,11 @@ async function sendMessage(text) {
     messages.push({ role: "assistant", content: data.reply });
   } catch (error) {
     removeTyping();
-    addMessage("assistant", "Sorry, something went wrong. Please check the server/API key and try again.");
+    addMessage("assistant", } catch (error) {
+  removeTyping();
+  addMessage("assistant", "ERROR: " + error.message);
+  console.error("WINR ERROR:", error);
+  } );
     console.error(error);
   } finally {
     send.disabled = false;
